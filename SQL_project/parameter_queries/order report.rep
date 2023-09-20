@@ -1,0 +1,184 @@
+PL/SQL Developer Report
+
+[SQL]
+---query for first report and graph
+select * 
+from shifts
+order by shift_type;
+
+---query for second report
+select *
+from order1
+order by status;
+
+---query for second graph
+select status, count(*) as order_amount
+from order1
+group by status;
+
+[Options]
+Connect=False
+Username=
+Password=2338
+Database=
+ConnectAs=
+LockMode=0
+LockedPassword=2414
+BkgColor=-16777211
+BkgImage=
+FormLayout=False
+OnlyNBSP=False
+LeftMargin=0
+TopMargin=0
+PageBreak=0
+AddSQL=False
+HandleTags=True
+
+[Styles]
+
+{Title}
+Enabled=True
+Name=Report Title
+Description=order report
+Style=Blue Title
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Param}
+Enabled=True
+Name=Variables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Table}
+Enabled=False
+Name=Tabular Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Form}
+Enabled=False
+Name=Form Tables
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{Field}
+Enabled=False
+Name=Default Field
+Description=
+Style=
+HeaderStyle=
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=ORDER_ID
+Description=
+Style=
+HeaderStyle=Blue Header
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=STATUS
+Description=
+Style=
+HeaderStyle=Blue Header
+Align=3
+Break=3
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=RETURN_DATE
+Description=
+Style=
+HeaderStyle=Blue Header
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=DELIVERY_DATE
+Description=
+Style=
+HeaderStyle=Blue Header
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=VOLENTEER_ID
+Description=
+Style=
+HeaderStyle=Blue Header
+Align=3
+Break=0
+Function=0
+Format=
+
+{*}
+Enabled=True
+Name=CUSTOMER_ID
+Description=
+Style=
+HeaderStyle=Blue Header
+Align=3
+Break=0
+Function=0
+Format=
+
+
+
+[CSS]
+Blue Title
+{
+  Background: #000050;
+  Color: #FFFF00;
+  Font-family: "Arial Black";
+  Font-size: 12pt;
+  Font-style: Italic;
+  Text-align: Center;
+  Width: 100%;
+}
+
+Blue Header
+{
+  Background: #400080;
+  Color: #FFE0E0;
+  Border-style: None;
+  Font-family: Arial;
+  Font-size: 9pt;
+  Font-weight: Bold;
+}
+
+

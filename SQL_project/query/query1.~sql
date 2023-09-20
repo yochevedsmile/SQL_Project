@@ -1,0 +1,5 @@
+SELECT product_num, color, weight
+FROM product
+WHERE product_num NOT IN (
+  SELECT product_num FROM in_order
+);

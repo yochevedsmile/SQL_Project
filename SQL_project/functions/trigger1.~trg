@@ -1,0 +1,9 @@
+create or replace trigger trg_update_catagory_date
+  after insert or update on type1  
+  for each row
+begin
+   UPDATE catagory
+  SET last_updated_date = SYSDATE
+  WHERE catagory_num = :new.catagory_num;
+end;
+/
